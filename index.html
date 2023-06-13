@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Week 11 Written Homework</title>
+  </head>
+  <body class="bg-pink-200 leading-relaxed">
+    <h1
+      class="text-5xl text-center text-red-600 font-black hover:text-blue-200"
+    >
+      Week 11 Written Homework
+    </h1>
+    <ol class="list-decimal list-inside text-indigo-600 m-2 p-3">
+      <li>
+        Express is a lightweight and an un-opinionated framework (which makes it
+        very flexible) used for easily creating servers that handle http
+        requests.
+      </li>
+      <li>
+        Mongoose the the module that helps us access and use our MongoDB using
+        nodejs. Mongoose defines our schema and enables us to create models
+        using these schemas. It essentially turns our 'data' into javascript
+        objects.
+      </li>
+      <li>Mongoose offers two ways in managing relationships between data.</li>
+      <ul class="list-disc list-inside ml-10">
+        <li>
+          Population - this involves 'inserting' another document inside a
+          related document's field, making both data accessible with just one
+          query.
+        </li>
+        <li>
+          Referencing - on the other hand, this process does not 'insert' the
+          document itself but rather a 'reference' or the ObjectID goes into the
+          related document's field.
+        </li>
+      </ul>
+      <li>
+        Software design patterns are basically time-tested solution for common
+        problems that arise when creating software. Following these patterns
+        make your application easier to maintain and scale. An examples of
+        software design pattern is the 'Singleton Pattern' - which ensures that
+        a certain class can only be instantiated once throughout the app.
+      </li>
+      <li>
+        The MVC architecture divides an application in three main components.
+        Models which is the data of your application. This is where everything
+        revolves around. Views, which is what the client sees and able to
+        interact with. Controller is what links the views and the models
+        together. Is is responsible for updating the models depending on what
+        the client does in the views, and also for rendering the changes that
+        creates in the models into the views for the client to see.
+      </li>
+      <li>
+        <ul class="list-disc list-inside ml-10">
+          <li>
+            Models - represents the data of our application, such as a database
+            how it is structured and how it is implemented. It should be
+            completely independent from the rest of the app.
+          </li>
+          <li>
+            Views - this is the representation of the data that the
+            clients/users could see. The views is responsible for rendering the
+            what ins the models and any changes that occurs within. It should
+            not contain any logic or computations, just straight up rendering of
+            the data that is easy to be consumed by users.
+          </li>
+          <li>
+            Controllers - handles all the logic of the application. When a user
+            interacts with the views, it is the controllers job to process that
+            information / event and follow the flow accordingly. This is the
+            bridge between the model and the view
+          </li>
+        </ul>
+      </li>
+      <li>
+        Latency refers to the amount of time it takes to 'move' data, starting
+        from making a request from the client to the server giving back a
+        response. While, Throughput refers to the amount of data the server is
+        able to handle concurrently within a given time. In the context of APIs,
+        we want a lower latency (shorter time, normally measured in milliseconds
+        ) and a larger throughput ( more data moved per given time ).
+      </li>
+      <li>
+        Minimizing latency is essential because you want to be able to update or
+        access whatever it is you are trying to do as fast as possible because
+        someone else in the web might be doing the same thing and we want to be
+        able to have the most up-to-date data as possible when making decisions
+        to interact with the app. We always want our data to be in sync with
+        whatever everyone is seeing in their own screens. Maximizing throughput
+        goes hand in hand with minimizing latency, for our application to scale
+        properly and to keep users using our app, our app should be able to
+        handle loads of requests at the same time without our server crashing.
+        This is to ensure we can offer the best user experience as possible.
+      </li>
+      <li>
+        Authentication in web dev refers to the process of verifying the
+        identity of the user. To ensure each user only has access to data they
+        should have access to.
+      </li>
+      <li>
+        Authentication normally starts with a submission or username/email and a
+        password of some sort. The server then takes this information and checks
+        wether it matches the one stored in a database.
+      </li>
+      <li>
+        express.static(root, [options]) is a built-in middleware in express that
+        let's you serve static files from your server. Static files can be html,
+        css, js, images, etc.
+      </li>
+      <li>
+        We can use express.static to render an image from our blog post on it's
+        own separate page, by providing the path to the image and passing in the
+        directory name to express ie. express.static('photos')
+      </li>
+      <li>
+        Jest is testing framework for javascript. It is fast and easy to use out
+        of the box which made it very popular.
+      </li>
+      <li>
+        Supertest is a node module that let's you programmatically create http
+        requests from your code. Alongside with jest, we can ping our API
+        endpoints and check wether we get the expected responses back from each
+        one. With jest and supertest, we can make requests, validate the
+        response, and perform testing.
+      </li>
+      <li>
+        We can manually test our endpoints with the use of third party programs
+        such as Postman. First we select the http method, set the url we are
+        testing. and edit request header/body accordingly. We have to manually
+        change these depending on the endpoint we want to test, and can be very
+        time consuming. <br />
+        With supertest, we can write out all the test logic once, and keep
+        testing them all at once with jest. Although it will take time to
+        programmatically type all the test, we won't have to manually click
+        anything else after that besides changing a few data being passed from
+        time to time, when needed.
+      </li>
+      <li>
+        <ul class="list-disc list-inside ml-10">
+          <li>
+            Unit Testing - refers to testing the smallest components of our app.
+            In our case these are normally the functions
+          </li>
+          <li>
+            Integration Testing - refers to testing how smaller components
+            interact when put all together. Making sure everything integrates
+            correctly.
+          </li>
+          <li>
+            End-to-End Testing - this testing refers to simulating the entirety
+            of an app. From initialization to when a user stops using it. It may
+            even used real world data/scenarios to validate that the system
+            works as expected.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-disc list-inside ml-10">
+          <li>
+            Functional Testing - this test verifies that the app functions
+            correctly and it does what it is supposed to to. An example would be
+            testing one of our API endpoints and checking that the response we
+            get is what we are expecting to get back.
+          </li>
+          <li>
+            Regression Testing - this tests whether recent code changes have not
+            negatively impacted a perfectly running application before the code
+            changes or bug fixes where pushed. An example would be to check that
+            a recent bug fix does not break or introduce another big somewhere
+            else in the app.
+          </li>
+          <li>
+            Smoke Testing - is a very quick and high level check of certain core
+            features, with the goal of determining wether further testing is
+            needed. An example of this would be to check if users can access the
+            application after logging in.
+          </li>
+          <li>
+            Performance Testing - this test is ran so we can get see how our app
+            performs under certain conditions. A few of the examples include:
+            <ul>
+              <li>
+                Load testing - where we test how our app responds to high number
+                of concurrent users
+              </li>
+              <li>
+                Network latency testing - where we measure our app's response
+                time when accessed from different locations in the world
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-disc list-inside ml-10">
+          <li>
+            Positive Testing - this test ensures that we get the expected
+            responses back when the app is provided valid data
+          </li>
+          <li>
+            Negative Testing - this test ensures the app handles invalid input,
+            edge cases the way it is supposed to
+          </li>
+        </ul>
+      </li>
+      <li>
+        Load testing puts a lot of stress on the software to see how it will
+        respond, so that we can measure how well it does under heavy traffic.
+        Normally a realistic heavy work load is simulated during the test to see
+        on what areas our software can improve.
+      </li>
+      <li>
+        Usability testing is done to see how 'user-friendly' our application is.
+        Are clients able to follow the flow of the app? Is the design
+        consistent? Is it easy to find and navigate to the thing they are
+        looking for Some key points to keep in mind of are:
+        <ul class="list-disc list-inside ml-10">
+          <li>ease of use</li>
+          <li>visual design</li>
+          <li>error handling</li>
+        </ul>
+      </li>
+      <li>
+        Security testing makes sure our app is able to protect sensitive data
+        the it contains, prevent them from being 'leaked'. Compliance with
+        certain regulations also fall under security testing. By adhering to
+        these, we hope to keep customer's trust, prevent service disruptions and
+        save money by fixing the problem while it's early.
+      </li>
+      <li>
+        Compatibility testing refers to tests that ensures our app is able to
+        run on different platforms, software, operating systems, and other
+        environments.
+      </li>
+      <li>
+        Recovery testing verifies how well our app can go back to functioning
+        level after different types of failures and/ or disruptions. This is
+        important because everything no matter how well-built will experience
+        these issues at some point, by figuring out where our app's weaknesses
+        are we can fortify then and prepare for when they fail. This ensure that
+        our software is able to bounce back and resume to normal, making it
+        reliable.
+      </li>
+      <li>
+        User Acceptance Testing is the final phase of testing before the
+        software is released to production. These are normally done by the
+        end-users, the ones who the software is catered to, business
+        stakeholders, and people who are experts in the subject matter.
+        Essentially simulating what it would be like if the software was
+        released in the real world.
+      </li>
+      <li>
+        <ul class="list-disc list-inside ml-10">
+          <li>
+            Positive Testing - this is what most of use have been doing, we
+            create a scenario where we input data and get back the expected
+            results. An example would be to create and send a user and expect
+            the same data to be returned.
+          </li>
+          <li>
+            Negative Testing w/ Valid Input - This would be the opposite of the
+            first test described above. An example using our users api, would be
+            to if we try to 'get' a specific user and provide an id that does
+            not exist. The test should handle this the way it is supposed to and
+            return some kind of 'user not found' error
+          </li>
+          <li>
+            Negative Testing w/ Invalid input - An example of this using our
+            user api would be to pass in extra information in the payload of our
+            request, such as properties not defines in our model schema. The
+            test should then return an error letting the client know their
+            request is invalid.
+          </li>
+          <li>
+            Destructive Testing - Doing a load test using artillery would
+            probably resemble destructive testing the best. Where we stress test
+            our software and see how it functions under extreme conditions, such
+            as getting multiple concurrent requests in the same endpoint.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
